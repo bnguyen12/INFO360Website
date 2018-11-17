@@ -48,23 +48,15 @@ h3 {
     width: 75vw;
 }
 
-#slideshow img {
-    width: 30vw;
-    margin-right: 30px;
-    justify-content: center;
-    box-shadow: 5px 5px 10px #7C9EAC;
-    border-radius: 10px;
-}
-
-#features .container, #slideshow, #demos .container {
+#goals .container, #demos .container {
     flex-direction: row;
 }
 
-#features section {
+#goals section {
     margin: 15px;
 }
 
-#features h3 {
+#goals h3 {
     text-align: center;
 }
 
@@ -104,11 +96,6 @@ footer a, footer p {
     color: rgb(56, 82, 72);
 }
 
-#hyperlinks a:focus, #hyperlinks a:hover {
-    color: rgb(53, 95, 112);
-    background-color: rgb(126, 164, 179);
-}
-
 .mockups {
     max-width: 500px;
     max-height: 500px;
@@ -121,7 +108,7 @@ footer a, footer p {
 }
 
 @media (max-width: 992px) {
-    #features .container {
+    #goals .container {
         flex-direction: column;
     }
 
@@ -144,12 +131,12 @@ footer a, footer p {
         right: 0;
         height: 30vh;
         max-height: auto;
-        background-image: url('../img/tech_and_health.jpg');
+        background-image: url('../img/prison_gate.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         z-index: 0;
-        -webkit-filter: blur(5px);
+        -webkit-filter: blur(3px);
     }
 
     nav {
