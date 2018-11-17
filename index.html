@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,800" rel="stylesheet">
+    <meta name="author" content="Benny Nguyen">
+    <meta name="description" content="Description page">
+    <meta name="keywords" content="songs,music,mood,playlist">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,shrink-to-fit=no,width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./img/pill_icon.png">
+    <title>FACING SONGS</title>
+</head>
+<body>
+    <div id="navigation" aria-label="navigation header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="navbar-brand">
+                <i class="fa fa-music fa-3x" aria-label="icon" aria-hidden="false"></i>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target=".navbar-collapse" aria-label="Toggle navigation" aria-expanded="false">
+                <span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demos">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./stats.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutme.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron">
+        <div class="blurBackground"></div>
+        <h1><em>FACING</em><strong>SONGS</strong></h1>
+    </div>
+
+    <main>
+        <div class="container" aria-label="section overviews">
+
+            <section id="descriptions">
+                <header>
+                    <h2>Mission</h2>
+                </header>
+                <hr>
+                <p>
+                    The mission of this app is to sync up your playlist to different sources
+                    according to the mood it gets from you. Using face-detection methods, this app 
+                    will play bright and cheerful songs when you're happy, or calm and chill tracks
+                    when you're stressed. Studies have shown that your mental health can be greatly
+                    improved from music, so we aim to help those in trouble as streaming music
+                    becomes more widely available!
+                </p>
+            </section>
+
+            <div id="slideshow" class="container">
+                <img src="./img/apple_watch.jpg" alt="apple watch being clicked">
+                <img src="./img/record_player.jpg" alt="needle on a record player">
+            </div>
+
+            <section id="features">
+                <header>
+                    <h2>Features</h2>
+                </header>
+                <hr>
+                <div class="container">
+
+                    <section>
+                        <header>
+                            <h3>Accurate Mood Detection</h3>
+                        </header>
+                            <p>
+                                Ever wanted to understand how you really
+                                look like on the outside? Let us do the work. This app indicates if 
+                                what you think you feel like is what it looks like on the outside!
+                            </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Latest Songs</h3>
+                        </header>
+                            <p>
+                                The internet has many outlets to listen to your favorite tracks,
+                                except it's annoying when you can't find your songs all on the same
+                                page. With MoodSongs we put together your favorites for getting things
+                                like hype at the gym or relaxed when studying.
+                            </p>
+                    </section>
+
+                    <section>
+                        <header>
+                            <h3>Share Your Playlist</h3>
+                        </header>
+                            <p>
+                                We get it, you can share your playlist on Spotify to your friends. Oh,
+                                and your YouTube playlist. And your Deezer playlist. Well let us easily
+                                compile that for you to share on social media!
+                            </p>
+                    </section>
+                </div>
+            </section>
+
+            <section id="demos">
+                <header>
+                    <h2>Demos</h2>
+                </header>
+                <hr>
+                <section>
+                    <header>
+                        <h3>
+                            Search for Latest Songs
+                        </h3>
+                        <p>
+                            This is a mockup for the search page when looking for songs. You'll
+                            find a interactive example of finding songs related to an artist. Just
+                            type in your favorite artist!
+                        </p>
+                    </header>
+                        <section class="container">
+                            <img class="mockups" src="./img/search_screen.png" alt="search page on iphone">
+                            <div id="albumFinder">
+                                <div class="input-group mb-3">
+                                    <input id="artistInput" type="text" class="form-control" placeholder="Artist's name" aria-label="Artist's name">
+                                    <div class="input-group-append">
+                                        <button id="searchBtn" class="btn btn-outline-secondary" type="button">Search</button>
+                                    </div>
+                                </div>
+                                <div id="albumCarousel" class="carousel slide" data-ride="carousel"></div>
+                            </div>  
+                        </section>
+                </section>
+            </section>
+            
+            <section id="hyperlinks">
+                <header>
+                    <h4>Resources</h4>
+                    <p>Here are some resources about the impact of music on your mood:</p>
+                </header>
+                <a href="https://www.healthline.com/health-news/mental-listening-to-music-lifts-or-reinforces-mood-051713">Does Music Affect Your Mood?</a>
+                <br>
+                <a href="https://www.consciouslifestylemag.com/music-and-the-brain-affects-mood/">Music and the Brain</a>
+                <br>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3741536/">The Psychological Functions of Music Listening</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright&copy;2018 Benny Nguyen | </p>
+        <a href="mailto:bennyn@uw.edu">Email</a>
+    </footer>
+
+    <!-- necessary JS scripts -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

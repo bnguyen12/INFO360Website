@@ -1,0 +1,171 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #7C9EAC;
+    background: linear-gradient(#DDE8EC,#E1F1E7);
+    padding-top: 70px;
+}
+
+.jumbotron {
+    background: none;
+}
+
+img {
+    max-width: 75vw;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 10px #E1F1E7, -2px -2px 10px #E1F1E7;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h1, h2 {
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.fa {
+    color: #7C9EAC;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 75vw;
+}
+
+#slideshow img {
+    width: 30vw;
+    margin-right: 30px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #7C9EAC;
+    border-radius: 10px;
+}
+
+#features .container, #slideshow, #demos .container {
+    flex-direction: row;
+}
+
+#features section {
+    margin: 15px;
+}
+
+#features h3 {
+    text-align: center;
+}
+
+p, a {
+    font-size: 0.75em;
+}
+
+a {
+    color: rgb(111, 153, 170);
+    text-decoration-line: underline;
+    transition: all 1s ease-out;
+    border-radius: 2px;
+}
+
+footer a, footer p {
+    display: inline;
+}
+
+.navbar {
+    background: linear-gradient(to left, #DDE8EC,#E1F1E7);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #7C9EAC;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+}
+
+.navbar-collapse {
+    margin-right: 30px;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: rgb(56, 82, 72);
+}
+
+#hyperlinks a:focus, #hyperlinks a:hover {
+    color: rgb(53, 95, 112);
+    background-color: rgb(126, 164, 179);
+}
+
+.mockups {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0;
+}
+
+#myChart {
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    #features .container {
+        flex-direction: column;
+    }
+
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    img {
+        display: block;
+    }
+
+    .jumbotron .blurBackground {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 30vh;
+        max-height: auto;
+        background-image: url('../img/tech_and_health.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        -webkit-filter: blur(5px);
+    }
+
+    nav {
+        z-index: 1;
+    }
+
+    body {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 4.0em;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
