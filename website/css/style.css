@@ -71,7 +71,11 @@ p, a {
     font-size: 0.75em;
 }
 
-a {
+.jumbotron a {
+  color: #482961;
+}
+
+.sidenav a {
     color: #C9BAD1;
     text-decoration-line: underline;
     transition: all 1s ease-out;
